@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+
+.calculator {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom right, #85FFBD, #4CAF50); /* Green gradient for display */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold; /* Bold font for display */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #333;
+    border-radius: 5px;
+}
+
+button.operator {
+    background: linear-gradient(to bottom right, #FF9999, #FF3300); /* Red gradient for operators */
+    color: white;
+}
+
+button.number {
+    background: linear-gradient(to bottom right, #E0E0E0, #9E9E9E); /* Grey gradient for numbers */
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#history {
+    margin-top: 20px;
+}
+
+#history h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
